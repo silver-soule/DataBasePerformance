@@ -33,7 +33,7 @@ class CSVFileReader(val fileName:String) {
       iteratorOfData.toList.map(_.toList)
     }
     catch{
-      case _=> throw new Exception
+      case ex:Throwable=> throw ex
     }
     finally {
       bufferedSource.close

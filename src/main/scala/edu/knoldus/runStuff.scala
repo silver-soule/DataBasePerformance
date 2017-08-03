@@ -7,8 +7,9 @@ import edu.knoldus.database.{MySql, Sqlite}
   * Created by Neelaksh on 2/8/17.
   */
 object runStuff extends App{
+  val OUTPUTFILE = "/home/gitika/IdeaProjects/databasespeedtester/src/main/resources/newFile.csv"
   val dataBase = new MySql("root","potato123")
   val pc = new PerformanceCheck(dataBase)
   val data = pc.testFile("/home/gitika/IdeaProjects/databasespeedtester/src/main/resources/mycsv.csv")
-  new CSVWriter()
+  new CSVWriter(OUTPUTFILE).write(data)
 }
