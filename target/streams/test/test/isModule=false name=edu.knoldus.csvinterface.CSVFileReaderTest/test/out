@@ -1,3 +1,0 @@
-[0m[[0minfo[0m] [0m[32mCSVFileReaderTest:[0m[0m
-[0m[[0minfo[0m] [0m[31m- check Io *** FAILED ***[0m[0m
-[0m[[0minfo[0m] [0m[31m  List("1", "random query", "Drop table if exists CUSTOMERS;", "CREATE TABLE CUSTOMERS(ID   INT  NOT NULL,NAME VARCHAR (20) NOT NULL, AGE  INT NOT NULL, ADDRESS  CHAR (25) ,SALARY DECIMAL (18, 2), PRIMARY KEY (ID));", "Drop table if exists CUSTOMERS;") did not equal List(List("1"), List("random query"), List("Drop table if exists CUSTOMERS;"), List("CREATE TABLE CUSTOMERS(ID   INT  NOT NULL,NAME VARCHAR (20) NOT NULL, AGE  INT NOT NULL, ADDRESS  CHAR (25) ,SALARY DECIMAL (18, 2), PRIMARY KEY (ID));"), List("Drop table if exists CUSTOMERS;")) (CSVFileReaderTest.scala:23)[0m[0m
