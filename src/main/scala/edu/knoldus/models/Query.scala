@@ -6,8 +6,12 @@ package edu.knoldus.models
 case class QueryInfo(id:Int,description:String,precondition:String,query:String,postcondition:String)
 
 object QueryInfo{
+  val QUERYID = 0
+  val QUERYDESC = 1
+  val PRECOND = 2
+  val QUERY = 3
+  val POSTCOND = 4
   def apply(queryInfo:List[String]): QueryInfo ={
-
-    new QueryInfo(queryInfo(0).toInt,queryInfo(1),queryInfo(2),queryInfo(3),queryInfo(4))
+    new QueryInfo(queryInfo(QUERYID).toInt,queryInfo(QUERYDESC),queryInfo(PRECOND),queryInfo(QUERY),queryInfo(POSTCOND))
   }
 }

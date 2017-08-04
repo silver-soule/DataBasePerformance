@@ -19,7 +19,8 @@ class CSVFileReader(val fileName:String) {
       generateData(bufferedSource)
     }
     catch{
-      case _:FileNotFoundException => throw new Exception
+      case ex:FileNotFoundException => throw ex
+      case ex:Throwable => ex
     }
 
   }

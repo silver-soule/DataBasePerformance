@@ -13,7 +13,6 @@ trait DataBase {
 
   def createConnection(): Connection = {
     try{
-      Class.forName(driver)
       DriverManager.getConnection(url, userName, password)
     }
     catch{

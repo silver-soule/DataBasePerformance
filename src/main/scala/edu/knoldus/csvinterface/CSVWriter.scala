@@ -12,5 +12,4 @@ class CSVWriter(fileName:String) {
     writer.write(outputdata)
     writer.close()
   }
-
 }
