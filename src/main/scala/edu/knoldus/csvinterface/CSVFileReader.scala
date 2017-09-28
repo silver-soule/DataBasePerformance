@@ -20,7 +20,7 @@ class CSVFileReader(val fileName:String) {
     }
     catch{
       case ex:FileNotFoundException => throw ex
-      case ex:Throwable => ex
+      case ex:Throwable =>throw ex
     }
 
   }
